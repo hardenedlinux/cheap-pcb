@@ -1,0 +1,44 @@
+Source,/home/merle/workspaces/kicad/stm32-io-extend/stm32-io-extend.sch
+Kicad Rev,Eeschema 5.1.7+dfsg1-1~bpo10+1
+Generated Date,2020年10月24日 星期六 15时54分56秒
+
+Title,Not Set
+Company,Not Set
+Revision,Not Set
+Date Issue,Not Set
+
+Reference,Value,Library,Library Ref
+U3,STM32F103C8Tx,MCU_ST_STM32F1,STM32F103C8Tx
+U1,AMS1117-3.3,Regulator_Linear,AMS1117-3.3
+C1,100nF,Device,C
+C4,10uF,Device,C
+C10,10uF,Device,C
+C2,100nF,Device,C
+C5,100nF,Device,C
+C7,100nF,Device,C
+C8,100nF,Device,C
+C13,4.7uF,Device,C
+C3,10nF,Device,C
+C6,1uF,Device,C
+SW1,SW_DIP_x02,Switch,SW_DIP_x02
+R2,1K,Device,R
+R1,1K,Device,R
+R8,10K,Device,R
+R9,10K,Device,R
+R3,5K1,Device,R
+R7,5K1,Device,R
+R6,10K,Device,R
+C12,100nF,Device,C
+SW2,SW_Push,Switch,SW_Push
+U2,CH330N,Interface_USB,CH330N
+C9,100nF,Device,C
+J1,USB_C_Receptacle_USB2.0,Connector,USB_C_Receptacle_USB2.0
+J2,USB_C_Receptacle_USB2.0,Connector,USB_C_Receptacle_USB2.0
+R13,5K1,Device,R
+R10,5K1,Device,R
+R12,1K5,Device,R
+R14,22,Device,R
+R11,22,Device,R
+R5,22,Device,R
+R4,22,Device,R
+J3,Conn_02x18_Odd_Even,Connector_Generic,Conn_02x18_Odd_Even

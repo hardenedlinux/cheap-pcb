@@ -1,0 +1,83 @@
+
+(rules PCB stm32-io-extend
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (eu.mihosoft.freerouting.autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 55212)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 3.0)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.5)
+    )
+  )
+  (rule
+    (width 250.0)
+    (clear 200.2)
+    (clear 125.0 (type smd_to_turn_gap))
+    (clear 50.0 (type smd_smd))
+  )
+  (padstack "Via[0-1]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via_rule
+    default "Via[0-1]_800:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    GND VCC +5V "Net-(D1-Pad1)" "Net-(D2-Pad2)" "Net-(J1-PadB5)" "Net-(J1-PadA6)" "Net-(J1-PadA5)"
+    "Net-(J1-PadA7)" /NRST "/OSC_OUT" "/OSC_IN" /PB9 /PB8 /PB7 /PB6
+    /PB5 /PB4 /PB3 /PA15 /PA14 /PA13 /PA12 /PA11
+    /PA10 /PA9 /PA8 /PB15 /PB14 /PB13 /PB12 "/BOOT0_UP"
+    /PC13 /PC14 /PC15 /PA0 /PA1 /PA2 /PA3 /PB0
+    /PB1 /PB2 /PB10 /PB11 "/BOOT1_UP" "Net-(D3-Pad2)" /DI /CLK
+    /nWP /DO /CS "Net-(D4-Pad2)" "Net-(D5-Pad2)" "Net-(D5-Pad1)" "Net-(R10-Pad2)" "Net-(C1-Pad1)"
+    "Net-(C11-Pad1)" "Net-(Q1-Pad1)"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)

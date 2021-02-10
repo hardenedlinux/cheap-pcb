@@ -1,0 +1,24 @@
+Reference, Quantity, Value, Footprint,备注
+C10 ,1,4.7uF,Capacitor_SMD:C_0603_1608Metric,~
+C13 C14 ,2,22pF,Capacitor_SMD:C_0603_1608Metric,~
+C2 ,1,10nF,Capacitor_SMD:C_0603_1608Metric,~
+C4 ,1,1uF,Capacitor_SMD:C_0603_1608Metric,~
+C6 C12 ,2,10uF,Capacitor_SMD:C_0603_1608Metric,~
+C1 C3 C5 C7 C8 C9 C11 ,7,100nF,Capacitor_SMD:C_0603_1608Metric,~
+D1 ,1,1N5817WS,Diode_SMD:D_SOD-323,~
+D2 ,1,LED (RED),LED_SMD:LED_0603_1608Metric,红色发光二极管 封装0603
+F1 ,1,500mA,Fuse:Fuse_0805_2012Metric,自恢复保险丝电压大于5V
+J1 J2 ,2,USB_C_Receptacle_USB2.0,Connector_USB:USB_C_Receptacle_Palconn_UTC16-G,12pin单排焊点type-c座子
+J3 ,1,Conn_02x16_Odd_Even,Connector_PinSocket_2.54mm:PinSocket_2x16_P2.54mm_Vertical,2.54双排针 2×16
+R13 ,1,1K5,Resistor_SMD:R_0603_1608Metric,~
+R5 R6 R12 R15 ,4,22,Resistor_SMD:R_0603_1608Metric,~
+R1 R2 ,2,1K,Resistor_SMD:R_0603_1608Metric,~
+R3 ,1,330,Resistor_SMD:R_0603_1608Metric,~
+R4 R7 R11 R14 ,4,5K1,Resistor_SMD:R_0603_1608Metric,精度要求10%
+R8 R9 R10 ,3,10K,Resistor_SMD:R_0603_1608Metric,~
+SW1 ,1,SW_DIP_x02,Button_Switch_THT:SW_DIP_SPSTx02_Slide_6.7x6.64mm_W7.62mm_P2.54mm_LowProfile,2位波码开关 插针 引脚距离2.54mm
+SW2 ,1,SW_Push,Button_Switch_THT:SW_PUSH_6mm,按键开关 4脚  插件 6×6×4.3
+U1 ,1,AMS1117-3.3,Package_TO_SOT_SMD:SOT-89-3,~
+U2 ,1,CH330N,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,~
+U3 ,1,STM32F103C8T6,Package_QFP:LQFP-48_7x7mm_P0.5mm,~
+Y1 ,1,8MHz,Crystal:Crystal_HC49-U_Vertical,晶振 容值12.5pf
