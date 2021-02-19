@@ -137,7 +137,7 @@ Then select the suitable fuse. The choice of self-recovery fuse is relatively si
 
 STM32 requires 3.3V power supply. USB provides 5V power supply. We need a power conversion chip. You can find the AMS1117-3.3 (package SOT-223) in Kicad library. But we found a smaller package SOT-89-3 in a local store. In order to make the board more compact, smaller package is better.
 
-For the input and output of the voltage regulator chip, two series capacitors are required to store energy and filter out clutter. Finally, the power supply circuit is as follows:
+For the input and output of the voltage regulator chip, two bypass capacitors are required to store energy and filter out clutter. Finally, the power supply circuit is as follows:
 
 ![power supply circuit](power-supply-circuit.png)
 
